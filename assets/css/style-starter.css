@@ -10533,7 +10533,7 @@ h4.sub-title {
     z-index: 0; }
   .w3l-feature-3 .top-bottom:before {
     content: "";
-    background: rgba(7, 10, 12, 0.72);
+    background: #fff;/*rgba(7, 10, 12, 0.72);*/
     position: absolute;
     top: 0;
     min-height: 100%;
@@ -10547,17 +10547,17 @@ h4.sub-title {
     transition: 0.3s ease-out;
     border-radius: 4px;
     /* border: 1px solid #828282; */
-    background: rgba(255, 255, 255, 0.1); }
+    background: rgba(23, 162, 184, 0.1); }
   .w3l-feature-3 .three-grids-columns:hover {
-    background: #000;
+    background: rgba(23, 162, 184, 0.75);
     transition: 0.3s ease-out;
-    opacity: 0.8; }
+    opacity: 1/*0.8*/; }
   .w3l-feature-3 .grid-column {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px; }
   .w3l-feature-3 .three-grids-columns h4 {
     font-size: 20px;
-    color: var(--white-color);
+    /* color: var(--white-color); */
     line-height: 30px;
     padding-top: 25px;
     font-weight: 800; }
@@ -10565,7 +10565,7 @@ h4.sub-title {
     padding-top: 15px;
     font-size: 16px;
     line-height: 24px;
-    color: var(--white-color); }
+    /* color: var(--white-color);*/ } 
   .w3l-feature-3 .three-grids-columns span.fa {
     font-size: 48px;
     color: var(--opposite-color); }
@@ -12122,7 +12122,7 @@ body:after {
 
 .w3l-about-breadcrum .breadcrum-bg {
   background-size: cover;
-  background-image: linear-gradient(to right, rgba(42, 42, 42, 0.71), rgba(38, 40, 40, 0.78)), url(../images/2.jpg);
+  background-image: linear-gradient(to right, rgba(42, 42, 42, 0.71), rgba(38, 40, 40, 0.78)), url(../images/ex9.jpg);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center;
   padding-top: 86px; }
@@ -12248,4 +12248,13 @@ body:after {
 #spotify{
   width: 30px;
   height: 30px;
+}
+
+.papers{
+  padding: 9px;
+    background-color: rgb(82 82 82 / 5%);
+    border-color: #17a2b8;
+    /* border: 1px; */
+    border-style: solid;
+    border-radius: 12px;
 }
