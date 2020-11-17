@@ -10555,6 +10555,7 @@ h4.sub-title {
   .w3l-feature-3 .grid-column {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px; }
+  
   .w3l-feature-3 .three-grids-columns h4 {
     font-size: 20px;
     /* color: var(--white-color); */
@@ -10967,7 +10968,7 @@ body:after {
 
 
 .services-12 .form-12-content {
-  background: url("../images/cpFlower2.jpg") no-repeat center; 
+  background: url("../images/ex9-1.png") no-repeat center; 
   background-size: cover;
   padding: 5rem 0px;
   background-attachment: fixed;
@@ -12122,7 +12123,7 @@ body:after {
 
 .w3l-about-breadcrum .breadcrum-bg {
   background-size: cover;
-  background-image: linear-gradient(to right, rgba(42, 42, 42, 0.71), rgba(38, 40, 40, 0.78)), url(../images/ex9.jpg);
+  background-image: linear-gradient(to right, rgba(42, 42, 42, 0.71), rgba(38, 40, 40, 0.78)), url(../images/ex10-1.png);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: center;
   padding-top: 86px; }
