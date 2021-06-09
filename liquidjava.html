@@ -162,7 +162,7 @@ Author URL: http://w3layouts.com
           <code>@Refinement("x > 0") int x;</code> is an example of a variable <code>x</code> that
           has the basic type <code>int</code>, and is refined with the predicate <code>x > 0</code>.<br/>
           The predicates allowed inside the refinement belong to <i>quantifier-free linear integer arithmetic</i> logic.
-          Some examples can be seen bellow.<br/>
+          Some examples can be seen below.<br/>
         </p>
         <!-- <h5>Predicate examples:</h5> -->
         <!-- ##### Predicate Example ##### -->
@@ -245,8 +245,8 @@ Author URL: http://w3layouts.com
 
 
         <p style=" padding-bottom: 17px;">
-          To simplify the usage of refinements we can create <b>Aliases</b> 
-          for the predicates and simply apply them to the variables inside a <code>Refinement</code>.
+          To simplify the usage of refinements, we can create <b>Aliases</b> 
+          for the predicates and simply apply them to the variables inside a <code>@Refinement</code>.
           <br/>
         </p>
         <br/>
@@ -269,8 +269,8 @@ Author URL: http://w3layouts.com
     </div>
         <p style=" padding-bottom: 17px;">
           Refinements can also be used to model <b>Object State</b> by adding the possible 
-          states to the class and the desired <i>Ghost</i> predicates to be used for the
-          modeling.<br/>
+          states and transitions to the class and the desired <i>Ghost</i> predicates to model
+          class properties.<br/>
         </p>
 
         <!-- ##### Predicate Example ##### -->
@@ -327,13 +327,13 @@ Author URL: http://w3layouts.com
 				<a href="#refinementMethods"><div class="three-grids-columns">
 					<span class="fa fa-cogs"></span>
 					<h4>Methods</h4>
-					<p>Refinements in the parameters and return value of a method</p>
+					<p>Find refinements in parameters and return value of a method</p>
 					
 				</div></a>
 				<a href="#refinementClasses"><div class="three-grids-columns">
 					<span class="fa fa-puzzle-piece"></span>
 					<h4>Classes</h4>
-					<p>Get examples of object state modeling using State Sets and Ghost attributes</p>
+					<p>Get examples of object state modelling using State Sets and Ghost attributes</p>
 					
 				</div></a>
 			</div>
@@ -351,7 +351,7 @@ Author URL: http://w3layouts.com
 		<div class="container">
 			<div class="heading text-center mx-auto">
                 <h3 class="head text-white">Refinements in Variables</h3>
-                <p class="my-3 head text-white"> In every place we can have a basic type already used in Java, we can refine that type with <code>@Refinement</code></p>
+                <p class="my-3 head text-white">We can add a <code>@Refinement</code> in any place we already have a basic type in the code.</p>
       </div>
     </div>
   </div>
@@ -367,7 +367,7 @@ Author URL: http://w3layouts.com
         <!-- <div class="papers text-center"> -->
         <!-- Example -->
         <h5>Positive</h5> 
-        <p> Defining a variable as greater than zero.</p>
+        <p>The variable has a value greater than zero.</p>
           <!-- HTML generated using hilite.me -->
         <div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
         <pre style="margin: 0; line-height: 125%">
@@ -380,7 +380,7 @@ Author URL: http://w3layouts.com
         <br/>
         <!-- Example -->
         <h5>Percentage</h5> 
-        <p>Lower and upper bonds set to variable. The <code>_</code> represents the variable on which the refinement is being applied, in this case <code>_ >= 0</code> is the same as <code>percentage >= 0</code>.</p>
+        <p>Lower and upper bounds are set to the variable. The <code>_</code> represents the variable on which the refinement is being applied, in this case <code>_ >= 0</code> is the same as <code>percentage >= 0</code>.</p>
          <!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">
             <span class='codeline'><span style="color: #a6e22e">@Refinement</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;_ &gt;= 0 &amp;&amp; _ &lt;= 100&quot;</span><span style="color: #f92672">)</span></span>
             <span class='codeline'><span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">percentage</span><span style="color: #f92672">;</span></span>
@@ -402,7 +402,9 @@ Author URL: http://w3layouts.com
 		<div class="container">
 			<div class="heading text-center mx-auto">
                 <h3 class="head text-white">Refinements in Methods</h3>
-                <p class="my-3 head text-white"> The parameters and return value of the method can have a refined type.<br/> The parameters refinements will ensure that the method is only called with the expected types.<br/> While the return refinement ensures that the return inside the method's body is the expected.</p>
+                <p class="my-3 head text-white"> 
+                  The parameters and return value of the method can have refined types.<br/>The parameters refinements will ensure that the method is only called with the expected types. <br/>The return refinement guarantees that the return inside the method's body corresponds to the expected type.
+                </p>
       </div>
     </div>
   </div>
@@ -416,7 +418,7 @@ Author URL: http://w3layouts.com
         <!-- <div class="papers text-center"> -->
         <!-- Example -->
         <h5>Absolute</h5> 
-        <p>To refine the <b>return type</b> of a method we can add the <code>@Refinement</code> annotation above the method. We can use the <code>_</code> wild variable to refer to the return value. In this example we state that the return of <code>absolute</code> has a value between 0 and itself.</p><br/>
+        <p>To refine the <b>return type</b> of a method, we can add the <code>@Refinement</code> annotation above the method. We use the <code>_</code> wild variable to refer to the return value. In this example, we state that the return of <code>absolute</code> has a value between 0 and the parameter <code>n</code>.</p><br/>
           <!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #a6e22e">@Refinement</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;_ &gt;= 0 &amp;&amp; _ &gt;= n&quot;</span><span style="color: #f92672">)</span>
 <span style="color: #66d9ef">public</span> <span style="color: #66d9ef">static</span> <span style="color: #66d9ef">int</span> <span style="color: #a6e22e">absolute</span><span style="color: #f92672">(</span><span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">n</span><span style="color: #f92672">)</span> <span style="color: #f92672">{</span>
   <span style="color: #66d9ef">if</span><span style="color: #f92672">(</span><span style="color: #ae81ff">0</span> <span style="color: #f92672">&lt;=</span> <span style="color: #f8f8f2">n</span><span style="color: #f92672">)</span>
@@ -430,7 +432,7 @@ Author URL: http://w3layouts.com
         <br/>
         <!-- Example -->
         <h5>Add Bonus - Grade</h5> 
-        <p>We can also refine the type of the method's <b>parameters</b>. In this example both parameters have to be a <code>Percentage</code> (alias for <code>_ >= 0 && _ <= 100</code>) and <code>bonus</code> must be lesser than <code>grade</code>. <br/>We can refer to a parameter in the following parameter's refinement, but not the other way around. For example: <code>bonus</code> can refer to <code>grade</code> but <code>grade</code> cannot use <code>bonus</code> in its refinement.</p><br/>
+        <p>We can also refine the type of the method's <b>parameters</b>. In this example, both parameters have to be a <code>Percentage</code> (alias for <code>_ >= 0 && _ <= 100</code>) and <code>bonus</code> must be lesser than <code>grade</code>. <br/>We can refer to a previous parameter in the current parameter's refinement, but not the other way around. For example, <code>bonus</code> can refer to <code>grade</code> but <code>grade</code> cannot use <code>bonus</code> in its refinement.</p><br/>
         <!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #a6e22e">@RefinementAlias</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;Percentage(int x) { x &gt;= 0 &amp;&amp; x &lt;= 100}&quot;</span><span style="color: #f92672">)</span>
 <span style="color: #66d9ef">public</span> <span style="color: #66d9ef">class</span> <span style="color: #a6e22e">Grade</span><span style="color: #f92672">{</span>
 
@@ -456,16 +458,16 @@ Author URL: http://w3layouts.com
   </div>
 </section>
 <section class="w3l-feature-code" id="features">
-  <a id="refinementClass">
+  <a id="refinementClasses">
 	<div class="grid top-bottom" style="padding: 25px 0px;">
 		<div class="container">
 			<div class="heading text-center mx-auto">
                 <h3 class="head text-white">Refinements in Classes</h3>
                 <p class="my-3 head text-white">LiquidJava contains the mechanisms to model Object State.
                 <br/>
-                To model the different states of the object and reflect the change state in methods we use <code>@StateSet</code> and <code>@StateRefinement(from = "...", to = "...")</code> annotations.
-                <br/>To model other properties we can use <i>uninterpreted functions</i> that can be created with the <code>@Ghost</code> annotation.
-                <br/>Whenever we need to refer to the previous state of the object we can use the <code>old</code> keyword. 
+                To model the different states of the object and reflect the changing state in methods, we use <code>@StateSet</code> and <code>@StateRefinement(from = "...", to = "...")</code> annotations.
+                <br/>To model other properties, we can use <i>uninterpreted functions</i> that can be created with the <code>@Ghost</code> annotation.
+                <br/>Whenever we need to refer to the previous state of the object, we can use the <code>old</code> keyword. 
                 </p>
       </div>
     </div>
@@ -480,8 +482,8 @@ Author URL: http://w3layouts.com
         <!-- <div class="papers text-center"> -->
         <!-- Example -->
         <h5></h5> 
-        <p>If a class follows an implicit protocol that can be described by a DFA then the protocol can be described in LiquidJava to ensure that the different methods are invoked in the correct order. <br/>To define the possible object states we create a string array with their names inside the <code>@StateSet</code> annotation.
-        <br/>Then this states can be used inside <code>@StateRefinement</code> annotations to ensure the object state of the object in the beginning of the method call (<code>from</code>) and change the state at the end of the invocation (<code>to</code>).
+        <p>If a class follows an implicit protocol that can be described by a DFA, then the protocol can be described in LiquidJava to ensure that the different methods are invoked in the correct order. <br/>To define the possible object states we create a string array with their names inside the <code>@StateSet</code> annotation.
+        <br/>Then these states can be used inside <code>@StateRefinement</code> annotations to ensure the object state of the object in the beginning of the method call (<code>from</code>) and change the state at the end of the invocation (<code>to</code>).
         <br/>
         This example implements an order for the composition of an email:
         <br/>
