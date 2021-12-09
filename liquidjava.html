@@ -358,19 +358,19 @@ Author URL: http://w3layouts.com
 				<a href="#refinementVariables"><div class="three-grids-columns">
 					<span class="fa fa-bullseye"></span>
 					<h4>Variables</h4>
-					<p>Find examples of refinements in variables</p>
+					<p>Examples of refinements in variables and class fields</p>
 					
 				</div></a>
 				<a href="#refinementMethods"><div class="three-grids-columns">
 					<span class="fa fa-cogs"></span>
 					<h4>Methods</h4>
-					<p>Find refinements in parameters and return value of a method</p>
+					<p>Examples of methods with refinements in their parameters and return value.</p>
 					
 				</div></a>
 				<a href="#refinementClasses"><div class="three-grids-columns">
 					<span class="fa fa-puzzle-piece"></span>
 					<h4>Classes</h4>
-					<p>Get examples of object state modelling using State Sets and Ghost attributes</p>
+					<p>Examples of object type state modelling using State Sets and Ghost attributes</p>
 					
 				</div></a>
 			</div>
@@ -388,7 +388,7 @@ Author URL: http://w3layouts.com
 		<div class="container">
 			<div class="heading text-center mx-auto">
                 <h3 class="head text-white">Refinements in Variables</h3>
-                <p class="my-3 head text-white">We can add a <code>@Refinement</code> in any place we already have a basic type in the code.</p>
+                <p class="my-3 head text-white">We can add a <code>@Refinement</code> in any place we already have a basic type in the code. Hence, in declarations of variable or class fields it is possible to add a refinement type.</p>
       </div>
     </div>
   </div>
@@ -425,6 +425,19 @@ Author URL: http://w3layouts.com
             <span class='codeline'><span style="color: #f8f8f2">percentage</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">50</span><span style="color: #f92672">;</span> <span style="color: #75715e">//Correct</span></span>
             <span class='codeline'><span style="color: #f8f8f2">percentage</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">10</span> <span style="color: #f92672">+</span> <span style="color: #ae81ff">99</span><span style="color: #f92672">;</span> <span style="color: #75715e">//Error</span></span>
         </pre></div>
+        <!-- Example -->
+        <br/>
+        <h5>RGB fields</h5> 
+        <p> Class fields can have refinements just like any local variable. This example shows the use of the Alias <code>RGB</code> in the fields of <code>MyColor</code> class. The alias limits the values that an rgb color can have (an interval between 0 and 255) ensuring that each field only has values that belong to the correct interval. 
+         </p>
+        <!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #a6e22e">@RefinementAlias</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;RGB(int x) {x &gt;= 0 &amp;&amp; x &lt;= 255}&quot;</span><span style="color: #f92672">)</span>
+<span style="color: #66d9ef">class</span> <span style="color: #a6e22e">MyColor</span><span style="color: #f92672">{</span>
+  <span style="color: #a6e22e">@Refinememt</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;RGB(r)&quot;</span><span style="color: #f92672">)</span> <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">r</span><span style="color: #f92672">;</span>
+  <span style="color: #a6e22e">@Refinememt</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;RGB(_)&quot;</span><span style="color: #f92672">)</span> <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">g</span><span style="color: #f92672">;</span>
+  <span style="color: #a6e22e">@Refinememt</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;RGB(_)&quot;</span><span style="color: #f92672">)</span> <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">b</span><span style="color: #f92672">;</span>
+<span style="color: #f92672">}</span>
+</pre></div>
+
         
         <!-- ################ END VARIABLES ################ -->
         <br/><br/><br/>
@@ -440,7 +453,7 @@ Author URL: http://w3layouts.com
 			<div class="heading text-center mx-auto">
                 <h3 class="head text-white">Refinements in Methods</h3>
                 <p class="my-3 head text-white"> 
-                  The parameters and return value of the method can have refined types.<br/>The parameters refinements will ensure that the method is only called with the expected types. <br/>The return refinement guarantees that the return inside the method's body corresponds to the expected type.
+                  In methods, both the parameters and the return value can have refined types.<br/>The parameters refinements will ensure that the method is only invoked with the expected types. <br/>The return refinement guarantees that the return inside the method's body corresponds to the expected type.
                 </p>
       </div>
     </div>
@@ -500,11 +513,14 @@ Author URL: http://w3layouts.com
 		<div class="container">
 			<div class="heading text-center mx-auto">
                 <h3 class="head text-white">Refinements in Classes</h3>
-                <p class="my-3 head text-white">LiquidJava contains the mechanisms to model Object State.
+                <p class="my-3 head text-white">LiquidJava contains the mechanisms to model Object Type State.
                 <br/>
-                To model the different states of the object and reflect the changing state in methods, we use <code>@StateSet</code> and <code>@StateRefinement(from = "...", to = "...")</code> annotations.
-                <br/>To model other properties, we can use <i>uninterpreted functions</i> that can be created with the <code>@Ghost</code> annotation.
-                <br/>Whenever we need to refer to the previous state of the object, we can use the <code>old</code> keyword. 
+                Since class methods can have effects on the internal state of objects, each method can be annotated with the allowed state transitions using the <code>@StateRefinement(from = "...", to = "...")</code> annotation. In this annotation, the <code>from</code> argument represents the object states in which the method can be invoked, whereas the <code>to</code> argument represents the state the object will have at the end of the method execution. <br/>
+                There are two possibilities of modelling object state:<br/>
+                <b>State Sets:</b> If a class has a defined set of states, it is possible to create multiple <code>@StateSet</code> that include the allowed object states.<br/>
+                <b>Ghost Properties:</b> To model other properties (int or boolean) it is possible to create <code>@Ghost</code> properties that work as uninterpreted functions.<br/>
+
+                In either case, whenever there is a need to refer to the previous state of the object, it is possible to use the  <code>old</code> keyword.
                 </p>
       </div>
     </div>

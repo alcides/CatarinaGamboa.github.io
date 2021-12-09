@@ -12391,6 +12391,10 @@ body:after {
     border-radius: 12px;
 }
 
+.papers:hover {
+  background-color: #117a8b;
+  color:white;
+}l
 .codeline{
   margin-left: -12%;
 }
