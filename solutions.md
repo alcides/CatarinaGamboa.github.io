@@ -117,3 +117,17 @@ def desencriptar(texto):
   return res
   #one liner: "".join([chr(ord(i)-13)for i in texto])
 ```
+
+## Fórmula Resolvente
+```
+delta = b**2 - 4*a*c # 0 está errado. colocar o valor certo.
+
+if delta < 0:
+  print("Não há raizes")
+else:
+  r1 = 0 # estes 0 também estão errados 
+  r2 = 0 # idem
+  print("As raizes são")
+  print((-b + raiz_quadrada(delta))/(2*a))
+  print((-b - raiz_quadrada(delta))/(2*a))
+```
