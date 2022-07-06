@@ -101,3 +101,19 @@ for i in range(0, 3000):
   if(posY >= 100):
     donatello.right(40)
 ```
+## Cifrar como César
+```
+def encriptar(texto):
+  res = ""
+  for l in texto:
+    n = chr(ord(l)+13)
+    res += n
+  return res
+  
+def desencriptar(texto):
+  res = ""
+  for l in texto:
+    res+=chr(ord(l)-13)
+  return res
+  #one liner: "".join([chr(ord(i)-13)for i in texto])
+```
