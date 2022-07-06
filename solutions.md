@@ -131,3 +131,13 @@ else:
   print((-b + raiz_quadrada(delta))/(2*a))
   print((-b - raiz_quadrada(delta))/(2*a))
 ```
+## Pi
+```
+for i in range(dardosTotal):
+  # x e y deverão ser as coordenadas aleatórias de cada dado.
+  x = random()
+  y = random()
+  
+  x_ao_quadrado = x ** 2
+  y_ao_quadrado = y**2 # Alterar
+```
