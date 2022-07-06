@@ -28,6 +28,7 @@ print(e/1231)
 print(300/0)
 # Resultado: ZeroDivisionError
 ```
+
 ## Listas e ciclos for
 1.	melhor_fruta_do_mundo = frutas[1]
 2.	começa a contar do fim
@@ -46,7 +47,8 @@ for numero in numeros_impares:
 for numero in numeros_pares:
     print(numero)
 ```
-### Aleatórios
+
+## Aleatórios
 1.	por geração do random dentro do for
 2.	entre 0 e 1
 3.	
@@ -58,7 +60,18 @@ for i in range(1,10):
     alea = random()
     print((round(alea*10) % 6) + 1)
 ```
-### Donatello
+
+## Booleanos
+1. `aposta = True`
+2. 
+```
+if e == aposta:
+  print("Acertaste! Ganhaste 10 euros")
+else:
+  print("Falhaste! Perdeste 10 euros") 
+```
+
+## Donatello
 1.	
 ```a = 100*2
 b = 90
