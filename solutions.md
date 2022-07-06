@@ -1,3 +1,33 @@
+## Strings
+1. 
+```
+nome='Jarvis'
+print(nome)
+
+
+
+print("Olá eu sou o " + nome)
+print("Se estiver em apuros, chame" + nome)
+print("Sim, o " + nome + " está sempre a sua doisposição")
+```
+
+## Inteiros, Floats e Calculadora
+1. `print((a+b)*c)`
+2.
+```
+d = (a+b)*c
+print(d)
+```
+3.
+```
+e = 28820172 
+print(e/1231)
+```
+4.
+```
+print(300/0)
+# Resultado: ZeroDivisionError
+```
 ## Listas e ciclos for
 1.	melhor_fruta_do_mundo = frutas[1]
 2.	começa a contar do fim
