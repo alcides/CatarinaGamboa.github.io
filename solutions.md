@@ -69,3 +69,35 @@ for i in range(180):
      donatello.right(1) 
   donatello.right(10) 
 ```
+## O Donatello quer ser um roomba
+1.
+```
+for i in range(0, 3000):
+  donatello.forward(1)
+  posX, posY = donatello.pos()
+  
+  # rodar aleatóriamente entre -5 e 5 graus.
+  a = round(random()*10)-5
+  donatello.right(a)
+```
+2.
+```
+for i in range(0, 3000):
+  donatello.forward(1)
+  posX, posY = donatello.pos()
+  
+  # rodar aleatóriamente entre -5 e 5 graus.
+  a = round(random()*10)-5
+  donatello.right(a)
+
+  # verificar se o donatelo sai do quadrado
+  # entre (-100,-100) (100,100)
+  if(posX <=- 100):
+    donatello.right(40)
+  if(posX >= 100):
+    donatello.right(40)
+  if(posY <= -100):
+    donatello.right(40)
+  if(posY >= 100):
+    donatello.right(40)
+```
