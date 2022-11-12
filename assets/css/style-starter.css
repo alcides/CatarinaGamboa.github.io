@@ -12394,7 +12394,7 @@ body:after {
 .papers:hover {
   background-color: #e3a3b8;
   color:white;
-}l
+}
 .codeline{
   margin-left: -12%;
 }
@@ -12415,4 +12415,108 @@ body:after {
   right: 0;
   width: 100%;
   height: 100%;
+}
+
+
+.answer {
+  background-color: #ececf6;
+  border-radius: 8px;
+  border-style: solid;
+  padding: 1% 3% 1% 3%;
+  margin: 2% 5% 2% 2%;
+  
+}
+
+.answer:hover{
+  background-color: #b9bbbe;
+}
+
+.btn_correct:focus{
+  background-color: #28a745;
+  color:white;
+  border-color: #0d7025;
+  outline:0;
+}
+
+.btn_wrong:focus{
+  background-color: #ff394a;
+  border-color: #ad0916;
+  color:white;
+  outline:0;
+}
+
+/* ------- Collapsable -------*/
+.wrap-collabsible {
+  margin: auto;
+  /* margin-bottom: 1.2rem 0; */
+  
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+.lbl-toggle {
+  display: block;
+
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: center;
+
+  padding: 1rem;
+
+  color: #fff;
+  background: #0279ce;
+
+  cursor: pointer;
+
+  border-radius: 7px;
+  transition: all 0.25s ease-out;
+}
+
+.lbl-toggle:hover {
+  color: #98e5f8;
+}
+
+.lbl-toggle::before {
+  content: ' ';
+  display: inline-block;
+
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentColor;
+  vertical-align: middle;
+  margin-right: .7rem;
+  transform: translateY(-2px);
+
+  transition: transform .2s ease-out;
+}
+
+.toggle:checked + .lbl-toggle::before {
+  transform: rotate(90deg) translateX(-3px);
+}
+
+.collapsible-content {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .25s ease-in-out;
+}
+
+.toggle:checked + .lbl-toggle + .collapsible-content {
+  max-height: 100vh;
+}
+
+.toggle:checked + .lbl-toggle {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.collapsible-content .content-inner {
+  background: #dbf0ff;
+  border-bottom: 1px solid rgba(250, 224, 66, .45);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding: .5rem 1rem;
 }
