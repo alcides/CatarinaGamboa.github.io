@@ -12520,3 +12520,21 @@ input[type='checkbox'] {
   border-bottom-right-radius: 7px;
   padding: .5rem 1rem;
 }
+
+
+.q_and_a{
+  background: #e3f1fa;
+  padding: 2%;
+  border-radius: 2%;
+}
+
+.title_tutorial{
+  color: #0279ce;
+}
+
+.end_tutorial{
+  background: #0279ce;
+  padding: 2%;
+  border-radius: 2%;
+  color:white;
+}
