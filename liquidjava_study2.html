@@ -1,0 +1,539 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!doctype html>
+<html lang="en">
+  <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1929590,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>  
+  <head>
+    <link rel="icon" type="image/jpg" href="assets/images/iconLJ.png" sizes="228x228" />
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Liquid Java</title>
+    <!-- web fonts -->
+    <link href="//fonts.googleapis.com/css?family=Nunito:400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+    <!-- //web fonts -->
+    <!-- Template CSS -->
+    <link rel="stylesheet" href="assets/css/style-starter.css">
+    <link rel="stylesheet" href="assets/css/style-2.css">
+  </head>
+  <body>
+
+<!-- <section class="w3l-bootstrap-header">
+  <nav class="navbar navbar-expand-lg navbar-light py-lg-3 py-2">
+    <div class="container">
+       <a class="navbar-brand" href="index.html">Catarina Gamboa</a> -->
+      <!-- if logo is image enable this   
+    <a class="navbar-brand" href="#index.html">
+        <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
+    </a> -->
+      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon fa fa-bars"></span>
+      </button> -->
+
+      <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Papers & Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="activities.html">Other Activities</a>
+          </li>
+        </ul>
+      </div> -->
+    <!-- </div>
+  </nav>
+</section>  -->
+<!-- <section class="w3l-about-breadcrum">
+  <div class="breadcrum-bg">
+    <div class="container py-5">
+       <p> <br/><!--<a href="index.html">Home</a> &nbsp; / &nbsp; About--></p> 
+     </div>
+  </div>
+</section> 
+<!-- w3l-content-photo-5 -->
+<section>
+  <div class="w3l-content-photo-5 py-5" id="about">
+    <div class="content-main pt-lg-5 pt-md-3 pb-0" style='padding-top: 0rem !important;'>
+      <div class="container">
+        <div class="row">
+
+          <div class="row">
+            <div class="col-lg-5 content-photo">
+              <a href="#"><img src="assets/images/Liquid2.png" class="img-fluid" alt="content-photo"></a>
+            </div>
+            <div class="col-lg-7 content-left mt-lg-0 mt-5 pl-lg-5">
+              <h3>Exercises: <br/>Understand the error in the code through the message</h3>
+              <p class="mb-0">
+                In these exercises you will be asked to look at the code and the error message and understand what is the error prompted in the message.
+                <br/>
+                We aim to get a picture of how you understand the error through the error message. Therefore we ask you to:
+                </p>
+                <ol>
+                    <li>Try to <b>understand the error message</b> and select which peace of code would have produced the error;</li>
+                    <li><b>Talk aloud</b> describing each step and thought you have towards understanding the error;</li>
+                    <li>For the <b>Q&A</b> please answer the questions <b>aloud</b>, writing the answers is optional.</li>
+                </ol>
+            </div>
+          </div>
+  <!--------------------------------------------------------------------------------------------->
+  <!---- Row ---->
+  <br/><br/>
+  <div class="row">
+    <h3 class="title_tutorial">Exercise one: Variables</h3>
+    <br/><br/>
+    <div class="col-lg-12 content-left mt-lg-0 mt-5 pl-lg-5">
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">Failed to check refinement at: 
+
+@liquidjava.specification.Refinement(<span style="font-style: italic">&quot;y &gt; 10&quot;</span>)
+<span style="font-weight: bold">int</span> y = x - 45
+
+Type expected:(#y_25 &gt; 10)
+Refinement found:<span style="font-weight: bold">true</span> &amp;&amp; #y_25 == #x_24 - (45) &amp;&amp; #x_24 == #x_23 &amp;&amp; 
+                 #x_23 == #x_22 - #a_21 &amp;&amp; #x_22 == #x_19 &amp;&amp; #x_19 == 90 &amp;&amp; #a_21 == a &amp;&amp; (a &gt; 0) &amp;&amp; 
+                 a &lt; (50) &amp;&amp; a &lt; (50)
+
+Instance translation table:
+----------------------------------------------------------------------------------------------------------------------------------
+| Variable Name                    | Created in                                                   | File 
+----------------------------------------------------------------------------------------------------------------------------------
+| a                                | <span style="font-weight: bold">int</span> a                                                        | SimpleTest.java:17, 47 
+| #x_19                            | <span style="font-weight: bold">int</span> x = 90                                                   | SimpleTest.java:19, 6 
+| #y_25                            | <span style="font-weight: bold">int</span> y = x - 45                                               | SimpleTest.java:23, 7 
+| #x_24                            | x                                                            | SimpleTest.java:23, 11 
+| #a_21                            | a                                                            | SimpleTest.java:21, 11 
+| #fresh_20                        | a &lt; 50                                                       | SimpleTest.java:20, 5 
+| #x_23                            | x = x - a                                                    | SimpleTest.java:21, 3 
+| #x_22                            | x                                                            | SimpleTest.java:21, 7 
+----------------------------------------------------------------------------------------------------------------------------------
+
+Location: (../SimpleTest.java:23)
+</pre></div>
+  
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-12 content-left mt-lg-0 mt-5 pl-lg-5"><br/><br/>
+      <h5>Common functions:</h5>
+<!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #a6e22e">@Refinement</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;return &gt;= a &amp;&amp; return &lt;= b&quot;</span><span style="color: #f92672">)</span>
+<span style="color: #66d9ef">public</span> <span style="color: #66d9ef">static</span> <span style="color: #66d9ef">int</span> <span style="color: #a6e22e">inRange</span><span style="color: #f92672">(</span><span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">a</span><span style="color: #f92672">,</span> <span style="color: #a6e22e">@Refinement</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;b &gt; a&quot;</span><span style="color: #f92672">)</span> <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">b</span><span style="color: #f92672">)</span> <span style="color: #f92672">{...}</span>
+
+<span style="color: #66d9ef">public</span> <span style="color: #66d9ef">static</span> <span style="color: #66d9ef">int</span> <span style="color: #a6e22e">safeDivide</span><span style="color: #f92672">(</span><span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">num</span><span style="color: #f92672">,</span> <span style="color: #a6e22e">@Refinement</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;den != 0&quot;</span><span style="color: #f92672">)</span> <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">den</span><span style="color: #f92672">)</span> <span style="color: #f92672">{...}</span>
+</pre></div>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-lg-6 content-left mt-lg-0 mt-5 pl-lg-5"><br/>
+      <h5>A)</h5>
+<!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"><span style="color:#706f6f">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11</span></pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #66d9ef">public</span> <span style="color: #66d9ef">void</span> <span style="color: #a6e22e">example</span> <span style="color: #f92672">(</span><span style="color: #a6e22e">@Refinement</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;a &gt; 0&quot;</span><span style="color: #f92672">)</span> <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">a</span><span style="color: #f92672">)</span> <span style="color: #f92672">{</span>
+  <span style="color: #a6e22e">@Refinement</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;0 &lt;= x &amp;&amp; x &lt;= 100&quot;</span><span style="color: #f92672">)</span>
+  <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">x</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">90</span><span style="color: #f92672">;</span>
+  <span style="color: #66d9ef">if</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">a</span> <span style="color: #f92672">&lt;</span> <span style="color: #ae81ff">50</span><span style="color: #f92672">)</span> <span style="color: #f92672">{</span>
+    <span style="color: #f8f8f2">x</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">x</span> <span style="color: #f92672">-</span> <span style="color: #f8f8f2">a</span><span style="color: #f92672">;</span>
+    <span style="color: #a6e22e">@Refinement</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;y &gt; 10&quot;</span><span style="color: #f92672">)</span>
+    <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">y</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">x</span> <span style="color: #f92672">-</span> <span style="color: #ae81ff">45</span><span style="color: #f92672">;</span>
+  <span style="color: #f92672">}</span>
+  <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">y</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">safeDivide</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">x</span><span style="color: #f92672">,</span> <span style="color: #f8f8f2">a</span><span style="color: #f92672">);</span>
+  <span style="color: #f8f8f2">x</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">97</span> <span style="color: #f92672">-</span> <span style="color: #ae81ff">10</span> <span style="color: #f92672">+</span> <span style="color: #ae81ff">15</span> <span style="color: #f92672">-</span> <span style="color: #ae81ff">20</span> <span style="color: #f92672">+</span> <span style="color: #ae81ff">1</span><span style="color: #f92672">;</span>
+<span style="color: #f92672">}</span>
+</pre></td></tr></table></div>
+ 
+ 
+  
+    </div>
+    <div class="col-lg-6 content-left mt-lg-0 mt-5 pl-lg-5"><br/><br/>
+      <h5>B)</h5>
+<!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"><span style="color:#706f6f">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11</span></pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #66d9ef">public</span> <span style="color: #66d9ef">void</span> <span style="color: #a6e22e">example</span> <span style="color: #f92672">(</span><span style="color: #a6e22e">@Refinement</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;a &gt; 0&quot;</span><span style="color: #f92672">)</span> <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">a</span><span style="color: #f92672">)</span> <span style="color: #f92672">{</span>
+  <span style="color: #a6e22e">@Refinement</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;0 &lt;= x &amp;&amp; x &lt;= 100&quot;</span><span style="color: #f92672">)</span>
+  <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">x</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">90</span><span style="color: #f92672">;</span>
+  <span style="color: #66d9ef">if</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">a</span> <span style="color: #f92672">&lt;</span> <span style="color: #ae81ff">50</span><span style="color: #f92672">)</span> <span style="color: #f92672">{</span>
+    <span style="color: #f8f8f2">x</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">a</span> <span style="color: #f92672">-</span> <span style="color: #f8f8f2">x</span><span style="color: #f92672">;</span>
+    <span style="color: #a6e22e">@Refinement</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;y &gt; 10&quot;</span><span style="color: #f92672">)</span>
+    <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">y</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">x</span> <span style="color: #f92672">-</span> <span style="color: #ae81ff">45</span><span style="color: #f92672">;</span>
+  <span style="color: #f92672">}</span>
+  <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">y</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">safeDivide</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">x</span><span style="color: #f92672">,</span> <span style="color: #f8f8f2">a</span><span style="color: #f92672">);</span>
+  <span style="color: #f8f8f2">x</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">97</span> <span style="color: #f92672">-</span> <span style="color: #ae81ff">10</span> <span style="color: #f92672">+</span> <span style="color: #ae81ff">15</span> <span style="color: #f92672">-</span> <span style="color: #ae81ff">20</span> <span style="color: #f92672">+</span> <span style="color: #ae81ff">1</span><span style="color: #f92672">;</span>
+<span style="color: #f92672">}</span>
+</pre></td></tr></table></div>
+ 
+    </div>
+  </div>
+
+  <div class="col-lg-12 content-left mt-lg-0 mt-5 pl-lg-5 q_and_a">
+    <h5 class="title_tutorial">Q&A</h5>
+    <h5>What is the error?</h5>
+    <input type="text" id="fname" name="fname"  style="width:100%"><br><br>
+    <h5>What would fix it?</h5>
+    <input type="text" id="fname" name="fname" style="width:100%"><br><br>
+
+
+
+    <div class="wrap-collabsible" >
+        <input id="collapsible2" class="toggle" type="checkbox">
+        <label for="collapsible2" class="lbl-toggle">Example Answer</label>
+        <div class="collapsible-content">
+          <div class="content-inner">
+            The method <i>safeDivide</i> is invoked with the second argument with the value zero which goes against the refinement.
+            <br/>
+            The solution would be to change the second argument to a different value (different than zero).
+          </div>
+        </div>
+      </div>
+   
+</div>    
+
+
+<br/> <br/> <br/> <br/>
+
+  <!--------------------------------------------------------------------------------------------->
+  <!---- Row ---->
+  <div class="row">
+    <div class="col-lg-6 content-photo">
+        <br/><br/>
+        <h3 class="title_tutorial">Exercise one: Variables</h3>
+<br/>
+<!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"><span style="color:#706f6f">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #a6e22e">@Refinement</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;return &gt;= a &amp;&amp; return &lt;= b&quot;</span><span style="color: #f92672">)</span>
+<span style="color: #66d9ef">public</span> <span style="color: #66d9ef">static</span> <span style="color: #66d9ef">int</span> <span style="color: #a6e22e">inRange</span><span style="color: #f92672">(</span><span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">a</span><span style="color: #f92672">,</span> 
+                            <span style="color: #a6e22e">@Refinement</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;b &gt; a&quot;</span><span style="color: #f92672">)</span>
+                            <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">b</span><span style="color: #f92672">)</span> <span style="color: #f92672">{</span>
+    <span style="color: #66d9ef">...</span> 
+<span style="color: #f92672">}</span>
+
+<span style="color: #66d9ef">public</span> <span style="color: #66d9ef">static</span> <span style="color: #66d9ef">int</span> <span style="color: #a6e22e">safeDivide</span><span style="color: #f92672">(</span><span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">num</span><span style="color: #f92672">,</span>
+                        <span style="color: #a6e22e">@Refinement</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;den != 0&quot;</span><span style="color: #f92672">)</span>
+                        <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">den</span><span style="color: #f92672">)</span> <span style="color: #f92672">{</span>
+    <span style="color: #66d9ef">return</span> <span style="color: #f8f8f2">num</span><span style="color: #f92672">/</span><span style="color: #f8f8f2">den</span><span style="color: #f92672">;</span>
+<span style="color: #f92672">}</span>
+
+<span style="color: #66d9ef">public</span> <span style="color: #66d9ef">static</span> <span style="color: #66d9ef">void</span> <span style="color: #a6e22e">main</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">String</span><span style="color: #f92672">[]</span> <span style="color: #f8f8f2">args</span><span style="color: #f92672">)</span> <span style="color: #f92672">{</span>
+    <span style="color: #a6e22e">@Refinement</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;0 &lt;= x &amp;&amp; x &lt;= 100&quot;</span><span style="color: #f92672">)</span>
+    <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">x</span><span style="color: #f92672">;</span>
+    <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">a</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">100</span><span style="color: #f92672">;</span>
+    <span style="color: #f8f8f2">x</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">a</span> <span style="color: #f92672">-</span> <span style="color: #ae81ff">90</span><span style="color: #f92672">;</span>
+    <span style="color: #f8f8f2">x</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">inRange</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">x</span><span style="color: #f92672">,</span> <span style="color: #f8f8f2">a</span><span style="color: #f92672">);</span>
+    <span style="color: #f8f8f2">a</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">safeDivide</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">a</span><span style="color: #f92672">,</span> <span style="color: #f8f8f2">x</span><span style="color: #f92672">-</span><span style="color: #ae81ff">10</span><span style="color: #f92672">);</span>
+    <span style="color: #f8f8f2">x</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">a</span> <span style="color: #f92672">-</span> <span style="color: #ae81ff">50</span><span style="color: #f92672">;</span>
+    <span style="color: #f8f8f2">a</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">x</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">x</span> <span style="color: #f92672">*</span> <span style="color: #f8f8f2">a</span><span style="color: #f92672">;</span>
+<span style="color: #f92672">}</span>
+</pre></td></tr></table></div>
+         
+
+    </div>
+    <div class="col-lg-6 content-left mt-lg-0 mt-5 pl-lg-5"><br/><br/><br/><br/>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">Failed to check refinement <span style="color: #997700; font-weight: bold">at:</span> 
+
+Method invocation <span style="color: #0066BB; font-weight: bold">safeDivide</span><span style="color: #333333">(</span>a<span style="color: #333333">,</span> <span style="color: #333333">(</span>x <span style="color: #333333">-</span> <span style="color: #0000DD; font-weight: bold">10</span><span style="color: #333333">))</span> <span style="color: #997700; font-weight: bold">in:</span>
+test<span style="color: #333333">.</span><span style="color: #0000CC">project</span><span style="color: #333333">.</span><span style="color: #0000CC">Test</span><span style="color: #333333">.</span><span style="color: #0000CC">safeDivide</span><span style="color: #333333">(</span>a<span style="color: #333333">,</span> <span style="color: #333333">(</span>x <span style="color: #333333">-</span> <span style="color: #0000DD; font-weight: bold">10</span><span style="color: #333333">))</span>
+
+Type <span style="color: #997700; font-weight: bold">expected:</span><span style="color: #333333">(</span> #den_11 <span style="color: #333333">!=</span> <span style="color: #0000DD; font-weight: bold">0</span><span style="color: #333333">)</span>
+Refinement <span style="color: #997700; font-weight: bold">found:</span><span style="color: #008800; font-weight: bold">true</span> <span style="color: #333333">&amp;&amp;</span>  #den_11 <span style="color: #333333">==</span>  #x_10 <span style="color: #333333">-</span> <span style="color: #333333">(</span><span style="color: #0000DD; font-weight: bold">10</span><span style="color: #333333">)</span> <span style="color: #333333">&amp;&amp;</span><br/>  #x_10 <span style="color: #333333">==</span>  #x_9 <span style="color: #333333">&amp;&amp;</span> <span style="color: #333333">(</span> #x_9 <span style="color: #333333">&gt;=</span>  #x_7 <span style="color: #333333">&amp;&amp;</span>  #x_9 <span style="color: #333333">&lt;=</span>  #a_5<span style="color: #333333">)</span> <span style="color: #333333">&amp;&amp;</span><br/>  #x_7 <span style="color: #333333">==</span>  #a_6 <span style="color: #333333">-</span> <span style="color: #333333">(</span><span style="color: #0000DD; font-weight: bold">90</span><span style="color: #333333">)</span> <span style="color: #333333">&amp;&amp;</span>  #a_6 <span style="color: #333333">==</span>  #a_5 <span style="color: #333333">&amp;&amp;</span>  #a_5 <span style="color: #333333">==</span> <span style="color: #0000DD; font-weight: bold">100</span>
+
+Instance translation <span style="color: #997700; font-weight: bold">table:</span>
+<span style="color: #333333">---------------------------------------------------------------------------------</span>
+<span style="color: #333333">|</span> Variable Name  <span style="color: #333333">|</span> Created in            <span style="color: #333333">|</span> File 
+<span style="color: #333333">---------------------------------------------------------------------------------</span>
+<span style="color: #333333">|</span>  #den_11       <span style="color: #333333">|</span> x <span style="color: #333333">-</span> <span style="color: #0000DD; font-weight: bold">10</span>                <span style="color: #333333">|</span> Test<span style="color: #333333">.</span><span style="color: #0000CC">java</span><span style="color: #333333">:</span><span style="color: #0000DD; font-weight: bold">20</span><span style="color: #333333">,</span> <span style="color: #0000DD; font-weight: bold">21</span> 
+<span style="color: #333333">|</span>  #a_6          <span style="color: #333333">|</span> a                     <span style="color: #333333">|</span> Test<span style="color: #333333">.</span><span style="color: #0000CC">java</span><span style="color: #333333">:</span><span style="color: #0000DD; font-weight: bold">20</span><span style="color: #333333">,</span> <span style="color: #0000DD; font-weight: bold">7</span> 
+<span style="color: #333333">|</span>  #a_5          <span style="color: #333333">|</span> <span style="color: #333399; font-weight: bold">int</span> a <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">100</span>           <span style="color: #333333">|</span> Test<span style="color: #333333">.</span><span style="color: #0000CC">java</span><span style="color: #333333">:</span><span style="color: #0000DD; font-weight: bold">17</span><span style="color: #333333">,</span> <span style="color: #0000DD; font-weight: bold">7</span> 
+<span style="color: #333333">|</span>  #x_10         <span style="color: #333333">|</span> x                     <span style="color: #333333">|</span> Test<span style="color: #333333">.</span><span style="color: #0000CC">java</span><span style="color: #333333">:</span><span style="color: #0000DD; font-weight: bold">19</span><span style="color: #333333">,</span> <span style="color: #0000DD; font-weight: bold">21</span> 
+<span style="color: #333333">|</span>  #x_7          <span style="color: #333333">|</span> x <span style="color: #333333">=</span> a <span style="color: #333333">-</span> <span style="color: #0000DD; font-weight: bold">90</span>            <span style="color: #333333">|</span> Test<span style="color: #333333">.</span><span style="color: #0000CC">java</span><span style="color: #333333">:</span><span style="color: #0000DD; font-weight: bold">18</span><span style="color: #333333">,</span> <span style="color: #0000DD; font-weight: bold">3</span> 
+<span style="color: #333333">|</span>  #x_9          <span style="color: #333333">|</span> x <span style="color: #333333">=</span> File<span style="color: #333333">.</span><span style="color: #0000CC">inRange</span><span style="color: #333333">(</span>x<span style="color: #333333">,</span> a<span style="color: #333333">)</span><span style="color: #333333">|</span> Test<span style="color: #333333">.</span><span style="color: #0000CC">java</span><span style="color: #333333">:</span><span style="color: #0000DD; font-weight: bold">19</span><span style="color: #333333">,</span> <span style="color: #0000DD; font-weight: bold">3</span> 
+<span style="color: #333333">---------------------------------------------------------------------------------</span>
+
+<span style="color: #997700; font-weight: bold">Location:</span> <span style="color: #333333">(/</span>Test<span style="color: #333333">.</span><span style="color: #0000CC">java</span><span style="color: #333333">:</span><span style="color: #0000DD; font-weight: bold">15</span><span style="color: #333333">)</span>
+______________________________________________________
+</pre></div>
+ <br/>
+    </div>
+  </div>
+
+
+  <div class="col-lg-12 content-left mt-lg-0 mt-5 pl-lg-5 q_and_a">
+    <h5 class="title_tutorial">Q&A</h5>
+    <h5>What is the error?</h5>
+    <input type="text" id="fname" name="fname"  style="width:100%"><br><br>
+    <h5>What would fix it?</h5>
+    <input type="text" id="fname" name="fname" style="width:100%"><br><br>
+</div>    
+
+
+
+<!--------------------------------------------------------------------------------------------->
+  <!---- Row ---->
+  <div class="row">
+    <div class="col-lg-6 content-photo">
+        <br/><br/>
+        <h3 class="title_tutorial">Exercise two: Class</h3>
+<br/>
+<!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"><span style="color:#706f6f">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36</span></pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #a6e22e">@StateSet</span><span style="color: #f92672">({</span><span style="color: #e6db74">&quot;unconnected&quot;</span><span style="color: #f92672">,</span> <span style="color: #e6db74">&quot;bind&quot;</span><span style="color: #f92672">,</span> 
+            <span style="color: #e6db74">&quot;connected&quot;</span><span style="color: #f92672">,</span> <span style="color: #e6db74">&quot;closed&quot;</span><span style="color: #f92672">})</span>
+<span style="color: #66d9ef">public</span> <span style="color: #66d9ef">class</span> <span style="color: #a6e22e">Socket</span> <span style="color: #f92672">{</span>
+    
+<span style="color: #a6e22e">@StateRefinement</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">to</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;unconnected(this)&quot;</span><span style="color: #f92672">)</span>
+<span style="color: #66d9ef">public</span> <span style="color: #66d9ef">void</span> <span style="color: #a6e22e">Socket</span><span style="color: #f92672">();</span>
+
+<span style="color: #a6e22e">@StateRefinement</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">from</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;unconnected(this)&quot;</span><span style="color: #f92672">,</span>
+                    <span style="color: #f8f8f2">to</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;bind(this)&quot;</span><span style="color: #f92672">)</span>
+<span style="color: #66d9ef">public</span> <span style="color: #66d9ef">void</span> <span style="color: #a6e22e">bind</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">SocketAddress</span> <span style="color: #f8f8f2">add</span><span style="color: #f92672">);</span>
+    
+<span style="color: #a6e22e">@StateRefinement</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">from</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;bind(this)&quot;</span><span style="color: #f92672">,</span>
+                    <span style="color: #f8f8f2">to</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;connected(this)&quot;</span><span style="color: #f92672">)</span>
+<span style="color: #66d9ef">public</span> <span style="color: #66d9ef">void</span> <span style="color: #a6e22e">connect</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">SocketAddress</span> <span style="color: #f8f8f2">add</span><span style="color: #f92672">);</span>
+    
+    
+<span style="color: #a6e22e">@StateRefinement</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">from</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;connected(this)&quot;</span><span style="color: #f92672">)</span>
+<span style="color: #66d9ef">public</span> <span style="color: #66d9ef">void</span> <span style="color: #a6e22e">sendUrgentData</span><span style="color: #f92672">(</span><span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">n</span><span style="color: #f92672">);</span>
+    
+<span style="color: #a6e22e">@StateRefinement</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">to</span><span style="color: #f92672">=</span><span style="color: #e6db74">&quot;closed(this)&quot;</span><span style="color: #f92672">)</span>
+<span style="color: #66d9ef">public</span> <span style="color: #66d9ef">void</span> <span style="color: #a6e22e">close</span><span style="color: #f92672">();</span>
+
+<span style="color: #f92672">}</span>
+
+<span style="color: #f92672">....</span>
+
+<span style="color: #66d9ef">public</span> <span style="color: #66d9ef">static</span> <span style="color: #66d9ef">void</span> <span style="color: #a6e22e">main</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">String</span><span style="color: #f92672">[]</span> <span style="color: #f8f8f2">args</span><span style="color: #f92672">){</span>
+    <span style="color: #66d9ef">int</span> <span style="color: #f8f8f2">port</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">5000</span><span style="color: #f92672">;</span>
+    <span style="color: #f8f8f2">InetAddress</span> <span style="color: #f8f8f2">inetAddress</span> <span style="color: #f92672">=</span> 
+        <span style="color: #f8f8f2">InetAddress</span><span style="color: #f92672">.</span><span style="color: #a6e22e">getByName</span><span style="color: #f92672">(</span><span style="color: #e6db74">&quot;localhost&quot;</span><span style="color: #f92672">);</span>    
+        
+    <span style="color: #f8f8f2">Socket</span> <span style="color: #f8f8f2">socket</span> <span style="color: #f92672">=</span> <span style="color: #66d9ef">new</span> <span style="color: #f8f8f2">Socket</span><span style="color: #f92672">();</span>
+    <span style="color: #f8f8f2">socket</span><span style="color: #f92672">.</span><span style="color: #a6e22e">bind</span><span style="color: #f92672">(</span><span style="color: #66d9ef">new</span> <span style="color: #f8f8f2">InetSocketAddress</span><span style="color: #f92672">(</span><span style="color: #f8f8f2">inetAddress</span><span style="color: #f92672">,</span> <span style="color: #f8f8f2">port</span><span style="color: #f92672">));</span>
+    <span style="color: #f8f8f2">socket</span><span style="color: #f92672">.</span><span style="color: #a6e22e">sendUrgentData</span><span style="color: #f92672">(</span><span style="color: #ae81ff">90</span><span style="color: #f92672">);</span>
+    <span style="color: #f8f8f2">socket</span><span style="color: #f92672">.</span><span style="color: #a6e22e">close</span><span style="color: #f92672">();</span>
+<span style="color: #f92672">}</span>
+</pre></td></tr></table></div>
+    
+    <br/>
+    </div>
+    <div class="col-lg-6 content-left mt-lg-0 mt-5 pl-lg-5"><br/><br/><br/><br/>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%">Failed to check state transitions when calling 
+socket<span style="color: #333333">.</span><span style="color: #0000CC">sendUrgentData</span><span style="color: #333333">(</span><span style="color: #0000DD; font-weight: bold">90</span><span style="color: #333333">)</span> <span style="color: #997700; font-weight: bold">in:</span>
+socket<span style="color: #333333">.</span><span style="color: #0000CC">sendUrgentData</span><span style="color: #333333">(</span><span style="color: #0000DD; font-weight: bold">90</span><span style="color: #333333">)</span>
+
+Expected possible <span style="color: #997700; font-weight: bold">states:</span><span style="color: #333333">(</span>connected<span style="color: #333333">(</span><span style="color: #008800; font-weight: bold">this</span><span style="color: #333333">))</span>
+
+State <span style="color: #997700; font-weight: bold">found:</span>
+<span style="color: #333333">-----------------------------------------------------------------------</span>
+∀#<span style="color: #997700; font-weight: bold">socket_20:</span>Socket<span style="color: #333333">,</span>  <span style="color: #333333">(</span>bind<span style="color: #333333">(</span>#socket_20<span style="color: #333333">))</span> 
+<span style="color: #333333">-----------------------------------------------------------------------</span>
+
+Instance translation <span style="color: #997700; font-weight: bold">table:</span>
+<span style="color: #333333">----------------------------------------------------------------------------------------------------</span>
+<span style="color: #333333">|</span> Variable Name  <span style="color: #333333">|</span> Created in                                                     <span style="color: #333333">|</span> File 
+<span style="color: #333333">----------------------------------------------------------------------------------------------------</span>
+<span style="color: #333333">|</span> #socket_20     <span style="color: #333333">|</span> socket<span style="color: #333333">.</span><span style="color: #0000CC">bind</span><span style="color: #333333">(</span><span style="color: #008800; font-weight: bold">new</span> java<span style="color: #333333">.</span><span style="color: #0000CC">net</span><span style="color: #333333">.</span><span style="color: #0000CC">InetSocketAddress</span><span style="color: #333333">(</span>inetAddress<span style="color: #333333">,</span> port<span style="color: #333333">))</span> <span style="color: #333333">|</span> Test<span style="color: #333333">.</span><span style="color: #0000CC">java</span><span style="color: #333333">:</span><span style="color: #0000DD; font-weight: bold">33</span><span style="color: #333333">,</span> <span style="color: #0000DD; font-weight: bold">3</span> 
+<span style="color: #333333">----------------------------------------------------------------------------------------------------</span>
+
+<span style="color: #997700; font-weight: bold">Location:</span> <span style="color: #333333">(</span>Test<span style="color: #333333">.</span><span style="color: #0000CC">java</span><span style="color: #333333">:</span><span style="color: #0000DD; font-weight: bold">18</span><span style="color: #333333">)</span>
+______________________________________________________
+</pre></div>
+
+ <br/> <br/> <br/> <br/>
+    </div>
+  </div>
+
+  <br/>
+  <div class="col-lg-12 content-left mt-lg-0 mt-5 pl-lg-5 q_and_a">
+    <h5 class="title_tutorial">Q&A</h5>
+    <h5>What is the error?</h5>
+    <input type="text" id="fname" name="fname"  style="width:100%"><br><br>
+    <h5>What would fix it?</h5>
+    <input type="text" id="fname" name="fname" style="width:100%"><br><br>
+  </div>    
+
+  <div class="col-lg-12 content-left mt-lg-0 mt-5 pl-lg-5">
+   <br/>
+  </div>    
+
+  
+  <div class="col-lg-12 content-left mt-lg-0 mt-5 pl-lg-5 q_and_a">
+    <h5 class="title_tutorial">Overview</h5>
+    <h5>After these exercises, how would you summarize your process for finding the refinement errors in the code?</h5>
+    <input type="text" id="fname" name="fname"  style="width:100%"><br/><br/>
+    <br/>
+  </div>    
+
+  <div class="col-lg-12 content-left mt-lg-0 mt-5 pl-lg-5">
+    <br/>
+  </div>   
+
+  <div class="col-lg-12 content-left mt-lg-0 mt-5 pl-lg-5 end_tutorial">
+    <h5>Thank you for your collaboration!</h5>
+  </div>    
+
+
+
+</section>
+
+
+  
+ 
+ <!-- grids block 5 -->
+ <section class="w3l-footer-29-main" id="footer">
+  <div class="footer-29 text-center">
+      <div class="container">
+        
+        <div class="main-social-footer-29"> 
+          <a href="#facebook" onclick="sendEmail()" class="facebook"><span class="fa fa-envelope-o"></span></a>
+          <a href="https://github.com/CatarinaGamboa" class="twitter"><span class="fa fa-github"></span></a>
+          <a href="https://www.linkedin.com/in/catarina-ventura-gamboa-518151172/" class="linkedin"><span class="fa fa-linkedin"></span></a>
+        </div>
+          <div class="bottom-copies text-center">
+              <p class="copy-footer-29">© 2020 My Website. All rights reserved | Designed by <a href="https://w3layouts.com">W3layouts</a></p>
+               
+          </div>
+      </div>
+  </div>
+   <!-- move top -->
+  <button onclick="topFunction()" id="movetop" title="Go to top">
+              <span class="fa fa-angle-up"></span>
+                 </button>
+                 <script>
+                     // When the user scrolls down 20px from the top of the document, show the button
+                     window.onscroll = function () {
+                         scrollFunction()
+                     };
+              
+                     function scrollFunction() {
+                         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                             document.getElementById("movetop").style.display = "block";
+                         } else {
+                             document.getElementById("movetop").style.display = "none";
+                         }
+                     }
+              
+                     // When the user clicks on the button, scroll to the top of the document
+                     function topFunction() {
+                         document.body.scrollTop = 0;
+                         document.documentElement.scrollTop = 0;
+                     }
+                 </script>
+                 <!-- /move top -->
+</section>
+<!-- // grids block 5 -->
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<!-- //footer-28 block -->
+</section>
+
+<script>
+    $(function () {
+      $('.navbar-toggler').click(function () {
+        $('body').toggleClass('noscroll');
+      })
+    });
+  </script> 
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+
+<!-- Smooth scrolling -->
+
+
+
+</body>
+
+</html>
+<!-- // grids block 5 -->
+
