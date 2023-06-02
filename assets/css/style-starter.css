@@ -12417,3 +12417,6 @@ body:after {
   height: 100%;
 }
 
+.small_p {
+  margin: 1%!important;
+}
